@@ -28,8 +28,8 @@ public class FileReader implements Reader {
 
 
         } catch (URISyntaxException | IOException | NullPointerException e) {
-            logger.error(e);
-            logger.info("Catch module");
+//            logger.error(e);
+//            logger.info("Catch module");
         }
         return message;
     }
