@@ -27,8 +27,9 @@ public class FileReader implements Reader {
             logger.info("Message from file have been gotten");
 
 
-        } catch (URISyntaxException | IOException e) {
+        } catch (URISyntaxException | IOException | NullPointerException e) {
             logger.error(e);
+            logger.info("Catch module");
         }
         return message;
     }
